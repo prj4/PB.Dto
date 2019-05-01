@@ -17,13 +17,6 @@ namespace PB.Dto
 
     }
 
-    public class DeletePictureModel
-    {
-        [Required]
-        public string EventPin { get; set; }
-        [Required]
-        public int PictureId { get; set; }
-    }
 
     public class PicturesAnswerModel
     {
