@@ -48,4 +48,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del C:\Users\troel\Documents\MobileApp\Photobook\PB.Dto.dll
+xcopy C:\Users\troel\Documents\PB.Dto\PB.Dto\obj\Debug\PB.Dto.dll C:\Users\troel\Documents\MobileApp\Photobook</PostBuildEvent>
+  </PropertyGroup>
 </Project>
