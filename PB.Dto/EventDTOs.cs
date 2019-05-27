@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Dto
+namespace Dto
 {
 
     public class EventModel
