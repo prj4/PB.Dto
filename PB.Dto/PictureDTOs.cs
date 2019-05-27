@@ -17,6 +17,11 @@ namespace PB.Dto
 
     }
 
+    public class ReturnPictureIdModel
+    {
+        [Required] public int PictureId { get; set; }
+    }
+
 
     public class PicturesAnswerModel
     {

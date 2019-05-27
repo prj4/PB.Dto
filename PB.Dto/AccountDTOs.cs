@@ -33,7 +33,7 @@ namespace PB.Dto
     {
         [Required]
         [Display(Name = "Name")]
-        public string Name { get; set; }
+        public string Name { get; set; }   
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
@@ -62,7 +62,7 @@ namespace PB.Dto
         public string UserName { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
 
@@ -81,7 +81,7 @@ namespace PB.Dto
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
-
+            
 
         [Display(Name = "Events")]
         public IEnumerable<EventModel> Events { get; set; }
