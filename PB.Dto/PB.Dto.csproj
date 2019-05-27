@@ -49,6 +49,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy C:\Users\Bruger\source\repos\prj4\PB.Dto\PB.Dto\bin\Debug\PB.Dto.dll C:\Users\Bruger\source\repos\prj4\PhotobookWebAPI\PhotobookWebAPI\PB.Dto</PostBuildEvent>
+    <PostBuildEvent>del C:\Users\troel\Documents\MobileApp\Photobook\PB.Dto.dll
+xcopy C:\Users\troel\Documents\PB.Dto\PB.Dto\obj\Debug\PB.Dto.dll C:\Users\troel\Documents\MobileApp\Photobook</PostBuildEvent>
   </PropertyGroup>
 </Project>
